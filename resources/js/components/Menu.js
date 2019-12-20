@@ -1,4 +1,5 @@
 import React from 'react';
+import { Link } from "react-router-dom";
 
 class Menu extends React.Component {
     constructor(props) {
@@ -7,11 +8,15 @@ class Menu extends React.Component {
 
     render() {
         return (
-            <div class="ui top borderless menu">
-                <div className="ui text container">
-                    <a class="item">Features</a>
-                    <a class="item">Testimonials</a>
-                    <a class="item">Sign-in</a>
+            <div className="ui secondary menu">
+                <div className="ui container">
+                    <Link to="/" className="item"><strong>Daniel Lee</strong></Link>
+                    <div className="right menu">
+                        <Link to="/about" className="item">About</Link>
+                        <Link to="/projects" className="item">Projects</Link>
+                        <Link to="/contact" className="item">Contact</Link>
+                        <span className="item">dan.dh.lee@gmail.com</span>
+                    </div>
                 </div>
             </div>
         );
