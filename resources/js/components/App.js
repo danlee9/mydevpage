@@ -6,6 +6,9 @@ import Menu from './Menu';
 import Main from './Main';
 import About from './About';
 
+const Projects = () => <div className="ui text container">Projects</div>;
+const Contact = () => <div className="ui text container">Contact</div>;
+
 export default class App extends Component {
     render() {
         return (
@@ -15,6 +18,8 @@ export default class App extends Component {
                     <Switch>
                         <Route path="/" exact component={Main} />
                         <Route path="/about" exact component={About} />
+                        <Route path="/projects" exact component={Projects} />
+                        <Route path="/contact" exact component={Contact} />
                     </Switch>
                 </Router>
             </div>
