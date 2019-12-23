@@ -1,0 +1,17 @@
+.menu-progress {
+    animation-name: progress;
+    animation-duration: 2s;
+    background-color: dodgerblue;
+    height: 2px;
+    width: 1%;
+}
+
+@keyframes progress {
+    from {
+        width: 1%;
+    }
+
+    to {
+        width: 100%;
+    }
+}
