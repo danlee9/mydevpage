@@ -1,0 +1,12 @@
+.projects-link {
+    display: inline-block;
+    border: 2px solid dodgerblue;
+    padding: 0.8em;
+    transition: background-color 0.5s, color 0.5s;
+}
+
+.projects-link:hover {
+    background-color: dodgerblue;
+    color: white;
+    /* border: 2px solid turquoise; */
+}

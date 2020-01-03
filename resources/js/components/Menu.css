@@ -1,17 +1,34 @@
+.menu-container {
+    margin-bottom: 3em;
+}
+
 .menu-progress {
     animation-name: progress;
-    animation-duration: 2s;
+    animation-duration: 1s;
+    animation-timing-function: linear;
     background-color: dodgerblue;
     height: 2px;
-    width: 1%;
 }
 
 @keyframes progress {
     from {
-        width: 1%;
+        width: 0%;
     }
 
     to {
         width: 100%;
     }
+}
+
+.ui.secondary.menu span.link a.item:hover {
+    color: dodgerblue;
+}
+
+.ui.secondary.menu span.link.active a.item {
+    color: dodgerblue;
+    font-weight: bold;
+}
+
+.ui.menu .link {
+    font-size: 1.2rem;
 }
