@@ -1,0 +1,10 @@
+.ui.form.email-form {
+    background-color: rgb(37,41,52);
+    box-shadow: 0 3px 4px 0 rgba(34,36,38,.30);
+    padding: 1em;
+}
+
+.ui.form.email-form input[type="text"], .ui.form.email-form textarea {
+    background-color: rgb(30,36,44);
+    color: rgb(90,92,94);
+}

@@ -3,10 +3,16 @@
     border: 2px solid dodgerblue;
     padding: 0.8em;
     transition: background-color 0.5s, color 0.5s;
+    font-size: 16px;
+    line-height: 16px;;
+    color: dodgerblue;
 }
 
 .projects-link:hover {
     background-color: dodgerblue;
     color: white;
-    /* border: 2px solid turquoise; */
+}
+
+.projects-link i.icon {
+    margin-right: 0;
 }

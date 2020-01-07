@@ -4,7 +4,7 @@
 
 .menu-progress {
     animation-name: progress;
-    animation-duration: 1s;
+    animation-duration: 0.5s;
     animation-timing-function: linear;
     background-color: dodgerblue;
     height: 2px;

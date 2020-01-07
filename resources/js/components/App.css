@@ -1,13 +1,15 @@
 body {
     font-family: Helvetica Neue, Helvetica, Arial, sans-serif;
+    /* background-color: #F7F7F7; */
 }
 
 .app-container {
     /* background: linear-gradient(-45deg, #EE7752, #e73c7e, #23a6d5, #23d5ab); */
-    background: linear-gradient(-45deg, white, aliceblue, lightcyan);
+    /* background: linear-gradient(-45deg, white, aliceblue, lightcyan);
     height: 100vh;
     background-size: 400% 400%;
-    animation: change 10s ease-in-out infinite;
+    animation: change 10s ease-in-out infinite; */
+    /* background: #F7F7F7; */
 }
 
 @keyframes change {
@@ -27,6 +29,35 @@ body {
 }
 
 .route-wrapper > div {
+    position: absolute;
+    width: 100%;
+    top: 0;
+    left: 0;
+}
+
+.fade-enter {
+    opacity: 0.01;
+}
+.fade-enter.fade-enter-active {
+    opacity: 1;
+    transition: opacity 300ms ease-in;
+}
+
+.fade-exit {
+    opacity: 1;
+}
+  
+.fade-exit.fade-exit-active {
+    opacity: 0.01;
+    transition: opacity 100ms ease-in;
+}
+
+.transition-group {
+    position: relative;
+    margin-top: 20px;
+}
+
+.route-section {
     position: absolute;
     width: 100%;
     top: 0;

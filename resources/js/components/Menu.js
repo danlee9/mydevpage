@@ -19,11 +19,11 @@ class Menu extends React.Component {
                             <Link to="/" className="item"><strong>Daniel Lee</strong></Link>
                         </span>
                         <div className="right menu">
-                            <span className={path == '/projects' ? 'link active' : 'link'}>
-                                <Link to="/projects" className="item">Projects</Link>
-                            </span>
                             <span className={path == '/about' ? 'link active' : 'link'}>
                                 <Link to="/about" className="item">About</Link>
+                            </span>
+                            <span className={path == '/projects' ? 'link active' : 'link'}>
+                                <Link to="/projects" className="item">Projects</Link>
                             </span>
                             <span className={path == '/contact' ? 'link active' : 'link'}>
                                 <Link to="/contact" className="item">Contact</Link>
