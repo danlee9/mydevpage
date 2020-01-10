@@ -27,12 +27,12 @@ class Contact extends React.Component {
                 <div className="ui center aligned container">
                     <h1 style={{color: 'dodgerblue'}}>Contact</h1>
                     <div className="ui center aligned grid">
-                        <div className="row" style={{fontSize: '16px', marginBottom: 0}}>
+                        <div className="row" style={{fontSize: '16px', marginBottom: 0, paddingBottom: 0}}>
                             <div className="column">
                                 Get in touch by sending an email to <a href="mailto: dan.dh.lee@gmail.com">dan.dh.lee@gmail.com</a>
                             </div>
                         </div>
-                        <div className="row" style={{fontSize: '16px', marginTop: 0}}>
+                        <div className="row" style={{fontSize: '16px', marginTop: 0, paddingTop: 0}}>
                             <div className="column">
                                 Or shoot me a message using the form below!
                             </div>
