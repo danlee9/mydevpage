@@ -43,7 +43,7 @@ class Projects extends React.Component {
                             </div>
                         </div> */}
                         <ProjectBlock imageSrc="/img/ibet3.png" title="Header" link="https://google.com" description={description} />
-                        <ProjectBlock imageSrc="https://via.placeholder.com/350x150" title="Header" link="https://google.com" description={description} />
+                        <ProjectBlock imageSrc="/img/inventory.png" title="Header" link="https://google.com" description={description} />
                         <ProjectBlock imageSrc="https://via.placeholder.com/350x150" title="Header" link="https://google.com" description={description} />
                     </div>
                 </Transition>
