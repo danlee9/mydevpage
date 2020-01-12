@@ -7,7 +7,11 @@ class Contact extends React.Component {
     constructor(props) {
         super(props)
         this.state = {
-            loaded: false
+            loaded: false,
+            showForm: false,
+            name: '',
+            email: '',
+            message: ''
         };
     } 
 
@@ -18,10 +22,31 @@ class Contact extends React.Component {
                     loaded: true
                 });
             }, 100);
+
+            setAsyncTimeout(() => {
+                this.setState({
+                    showForm: true
+                });
+            }, 600);
         }
     }
 
+    onInputChange = e => {
+        let { name, value } = e.target;
+        this.setState({[name]: value});
+    }
+
+    submit = async e => {
+        e.preventDefault();
+        console.log('blah');
+        const { name, email, message } = this.state;
+        const data = { name, email, message };
+        const res = await axios.post('message', data);
+        console.log(res);
+    }
+
     render() {
+        const { name, email, message } = this.state;
         return (
             <Transition visible={this.state.loaded} animation='drop' duration={500}>
                 <div className="ui center aligned container">
@@ -37,22 +62,24 @@ class Contact extends React.Component {
                                 Or shoot me a message using the form below!
                             </div>
                         </div>
-                        <div className="row">
-                            <div className="eight wide left aligned column">
-                                <form className="ui form email-form">
-                                    <div className="field">
-                                        <input type="text" name="name" placeholder="Name" />
-                                    </div>
-                                    <div className="field">
-                                        <input type="text" name="email" placeholder="Email" />
-                                    </div>
-                                    <div className="field">
-                                        <textarea name="message" id="" rows="10" placeholder="Message"></textarea>
-                                    </div>
-                                    <button className="ui primary button" type="submit"><i className="paper plane icon"></i> Send</button>
-                                </form>
+                        <Transition visible={this.state.showForm} animation="vertical flip" duration={500}>
+                            <div className="row">
+                                <div className="eight wide left aligned column">
+                                    <form className="ui form email-form">
+                                        <div className="field">
+                                            <input type="text" name="name" placeholder="Name" value={name} onChange={this.onInputChange}/>
+                                        </div>
+                                        <div className="field">
+                                            <input type="text" name="email" placeholder="Email" value={email} onChange={this.onInputChange}/>
+                                        </div>
+                                        <div className="field">
+                                            <textarea name="message" id="" rows="10" placeholder="Message" value={message} onChange={this.onInputChange}></textarea>
+                                        </div>
+                                        <button className="ui primary button" type="submit" onClick={this.submit}><i className="paper plane icon"></i> Send</button>
+                                    </form>
+                                </div>
                             </div>
-                        </div>
+                        </Transition>
                     </div>
                 </div>
             </Transition>
