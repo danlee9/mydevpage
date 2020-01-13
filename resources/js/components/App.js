@@ -11,6 +11,12 @@ import Contact from './Contact';
 import { spring, AnimatedSwitch } from 'react-router-transition';
 import { TransitionGroup, CSSTransition } from "react-transition-group";
 
+// const profile = require('../../../public/img/profile-sm.jpg');
+// const texteditor = require('../../../public/img/texteditor3.png');
+// const ibet = require('../../../public/img/ibet3.png');
+// const fca = require('../../../public/img/fca.png');
+// const yark = require('../../../public/img/yark.png');
+
 // we need to map the `scale` prop we define below
 // to the transform style property
 // function mapStyles(styles) {
@@ -101,6 +107,18 @@ export default class App extends Component {
                         </div>
                     )}/>
                 </Router>
+                <div id="preload">
+                    {/* <img src={profile} alt=""/>
+                    <img src={texteditor} alt=""/>
+                    <img src={ibet} alt=""/>
+                    <img src={fca} alt=""/>
+                    <img src={yark} alt=""/> */}
+                    <img src="/img/profile-sm.jpg" alt=""/>
+                    <img src="/img/texteditor3.png" alt=""/>
+                    <img src="/img/ibet3.png" alt=""/>
+                    <img src="/img/fca.png" alt=""/>
+                    <img src="/img/yark.png" alt=""/>
+                </div>
             </div>
         );
     }

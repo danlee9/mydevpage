@@ -1,0 +1,10 @@
+.ui.items .item .content a.header.project-header {
+    color: dodgerblue;
+    font-weight: 500;
+    /* opacity: 0.8; */
+}
+
+.ui.items .item .content a.header.project-header:hover {
+    font-weight: 800;
+    /* opacity: 1; */
+}

@@ -2,6 +2,7 @@ import React from 'react';
 import ProjectBlock from './ProjectBlock';
 import { Transition } from "semantic-ui-react";
 import { setAsyncTimeout } from "../utilities";
+import './Projects.css';
 
 class Projects extends React.Component {
     constructor(props) {
@@ -23,28 +24,17 @@ class Projects extends React.Component {
 
     render() {
         const description = "Lorem ipsum dolor sit amet consectetur adipisicing elit. Delectus architecto ad dicta nobis repellat mollitia. Deleniti commodi voluptates dolorum expedita facilis eaque vel, quaerat debitis ea, obcaecati delectus aperiam neque!";
+
+        const ibetDescription = "Sports betting app with virtual money to bet on nfl, nba, mlb games and more. Created with react and laravel. Use email blah@blah.com and password asdfasdf to login or go to the register page to create an account. Github: https://github.com/danlee9/react-ibet";
+        const fcaDescription = "Created pages for FCA (Fiat Chrysler Automobile) dealership sites such as financial forms, showroom lineups, and vehicle display pages, as well as general features such as inventory-search, coupons, third-party plugin integration, admin site customization, etc. Also designed internal web app to interface with our database and backend to handle data from FCA.";
+        const yarkDescription = "Launched various client sites such as yarkbuyscars on digital ocean servers running ubuntu linux and nginx. SSL Certificates added with Let's Encrypt";
         return (
             <div className="ui text container">
                 <Transition visible={this.state.loaded} animation='fade up' duration={500}>
                     <div className="ui divided items">
-                        {/* <div className="item">
-                            <div className="image">
-                                <img src="https://via.placeholder.com/350x150" alt=""/>
-                            </div>
-                            <div className="content">
-                                <a href="" className="header">Header</a>
-                                <div className="meta">
-                                    <span>Description</span>
-                                </div>
-                                <div className="description">
-                                    <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Incidunt voluptatibus id neque consequatur, quo soluta adipisci rerum enim cumque distinctio cum placeat et doloremque, non, repudiandae autem rem molestias. Nobis?</p>
-                                </div>
-                                <div className="extra">Additonal Details</div>
-                            </div>
-                        </div> */}
-                        <ProjectBlock imageSrc="/img/ibet3.png" title="Header" link="https://google.com" description={description} />
-                        <ProjectBlock imageSrc="/img/inventory.png" title="Header" link="https://google.com" description={description} />
-                        <ProjectBlock imageSrc="/img/yark.png" title="Header" link="https://google.com" description={description} />
+                        <ProjectBlock imageSrc="/img/ibet3.png" title="iBet" subtitle="Personal Project" link="http://ibet.danlee.com/" description={ibetDescription} />
+                        <ProjectBlock imageSrc="/img/inventory.png" title="FCA" subtitle="Work Project" link="https://www.maseratiofanaheimhills.com/" description={fcaDescription} />
+                        <ProjectBlock imageSrc="/img/yark.png" title="Yark Buys Cars" subtitle="Client Site" link="https://www.yarkbuyscars.com/" description={yarkDescription} />
                     </div>
                 </Transition>
             </div>

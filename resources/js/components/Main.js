@@ -30,7 +30,7 @@ class Main extends React.Component {
                         <Transition visible={this.state.loaded} animation='scale' duration={500}>
                             <div>
                                 <h1 className="ui header">
-                                    <img className="ui medium circular image" src="/img/profile-sm.jpg" style={{height: '150px', width: '150px'}}/>
+                                    <img rel="preload" className="ui medium circular image" src="/img/profile-sm.jpg" style={{height: '150px', width: '150px'}}/>
                                 </h1>
                                 <h1 className="ui header" style={{fontSize: '40px', marginBottom: 0}}>Hi, my name's <span style={{color: 'dodgerblue'}}>Daniel Lee</span></h1>
                                 <h3 style={{fontSize: '30px', marginTop: 0}}>I'm a full stack web developer</h3>
