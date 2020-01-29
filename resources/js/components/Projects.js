@@ -32,7 +32,7 @@ class Projects extends React.Component {
             <div className="ui text container">
                 <Transition visible={this.state.loaded} animation='fade up' duration={500}>
                     <div className="ui divided items">
-                        <ProjectBlock imageSrc="/img/ibet3.png" title="iBet" subtitle="Personal Project" link="http://ibet.danlee.com/" description={ibetDescription} />
+                        <ProjectBlock imageSrc="/img/ibet3.png" title="iBet" subtitle="Personal Project" link="http://ibetsports.net/" description={ibetDescription} />
                         <ProjectBlock imageSrc="/img/inventory.png" title="FCA" subtitle="Work Project" link="https://www.maseratiofanaheimhills.com/" description={fcaDescription} />
                         <ProjectBlock imageSrc="/img/yark.png" title="Yark Buys Cars" subtitle="Client Site" link="https://www.yarkbuyscars.com/" description={yarkDescription} />
                     </div>
