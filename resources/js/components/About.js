@@ -32,7 +32,7 @@ class About extends React.Component {
                     <div className="ui grid">
                         <div className="row">
                             <div className="thirteen wide column">
-                                <p>I'm a graduate of The University of Chicago who thought he was heading towards the world of finance, but ended up falling into the world of web development instead. Feel very fortunate to have gone on this detour as I can't imagine doing anything else now. I love the challenges involved and really enjoy solving the different puzzle-like problems that come from programming. When I'm not staring at my text editor, I'm usually reading up on current events as a news junkie, or watching a game since I'm a huge sports fan (Love my LA teams), especially basketball. I also have a broad interest in a wide variety of things such as movies, music, pop culture, politics, psychology, economics, etc. Just an avid learner and curious about the world in general. I like having my brain feel stimulated! For more info check out the links to the side or go to my <Link to="/projects">projects</Link> page.</p>
+                                <p>I'm a graduate of The University of Chicago who thought he was heading towards the world of finance, but ended up falling into the world of web development instead. I feel incredibly fortunate have gone on this detour as I now can't imagine doing anything else. I love the challenges involved and really enjoy solving the different problems that come from programming like a puzzle. When I'm not staring at my text editor, I'm usually reading up on current events (news junkie), or watching a game, usually basketball, since I'm a huge sports fan (love all my LA teams). I also have a broad interest in a wide variety of things such as movies, music, pop culture, politics, psychology, economics, etc. Just an avid learner and curious about the world in general. I like having my brain feel stimulated! For more info check out the links to the side or go to my <Link to="/projects">projects</Link> page.</p>
                             </div>
                             <div className="three wide column">
                                 <p><a href="/pdf/resume.pdf" target="_blank"><i className="large file pdf icon"></i> Resume</a></p>
@@ -69,5 +69,7 @@ class About extends React.Component {
         );
     }
 }
+
+/*<p>I'm a graduate of The University of Chicago who thought he was heading towards the world of finance, but ended up falling into the world of web development instead. Feel very fortunate to have gone on this detour as I can't imagine doing anything else now. I love the challenges involved and really enjoy solving the different puzzle-like problems that come from programming. When I'm not staring at my text editor, I'm usually reading up on current events as a news junkie, or watching a game since I'm a huge sports fan (Love my LA teams), especially basketball. I also have a broad interest in a wide variety of things such as movies, music, pop culture, politics, psychology, economics, etc. Just an avid learner and curious about the world in general. I like having my brain feel stimulated! For more info check out the links to the side or go to my <Link to="/projects">projects</Link> page.</p> */
 
 export default About;
