@@ -26,7 +26,7 @@ class About extends React.Component {
             <Transition visible={this.state.loaded} animation='fly left' duration={500}>
                 <div className="ui text container">
                     <div>
-                        <img rel="preload" className="ui fluid image" src="/img/texteditor3.png" style={{filter: 'blur(2px)'}} />
+                        <img rel="preload" className="ui fluid image" src="/img/texteditor3.png" style={{filter: 'blur(2px)'}} data-tooltip="This is what I usually stare at when I work. Usually not this blurry though" data-position="bottom center"/>
                     </div>
                     <h1 className="header">About Me</h1>
                     <div className="ui grid">
