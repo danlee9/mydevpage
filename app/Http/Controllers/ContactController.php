@@ -17,7 +17,11 @@ class ContactController extends Controller
 
         if ($validator->passes()) {
             // event(new Registered($user = $this->create($request->all())));
-            Mail::raw(request('message'), function($message) {
+            $message = request('message');
+            $email = request('email');
+            $name = request('name');
+            $rawMessage = "message: $message\n email: $email\n name: $name";
+            Mail::raw($rawMessage, function($message) {
                 $message->to('dan.dh.lee@gmail.com')
                     ->from(request('email'), request('name'))
                     ->subject('Message from portfolio');
