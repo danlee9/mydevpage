@@ -13,7 +13,7 @@ const ProjectBlock = props => {
                     {props.subtitle}
                 </div>
                 <div className="description">
-                    <p>{props.description}</p>
+                    {props.description}
                 </div>
                 {/* <div className="extra">Additonal Details</div> */}
             </div>

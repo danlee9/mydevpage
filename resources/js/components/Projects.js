@@ -23,7 +23,12 @@ class Projects extends React.Component {
     }
 
     render() {
-        const ibetDescription = "Sports betting app with virtual money to bet on NFL, NBA, MLB games and more. Created with react and laravel. Use email 'asdf@asdf.com' and password 'asdfasdf' to login or go to the register page to create an account. Github: https://github.com/danlee9/react-ibet";
+        const ibetDescription = "Sports betting app with virtual money to bet on NFL, NBA, MLB games and more. Created with react and laravel. Use email 'contact@danlee.dev' and password 'guestuser' to login or go to the register page to create a personal account. Github: https://github.com/danlee9/react-ibet";
+        // const ibetDescription = () => {
+        //     return (
+        //         <p>Sports betting app with virtual money to bet on NFL, NBA, MLB games and more. Created with react and laravel. Use email 'contact@danlee.dev' and password 'guestuser' to login or go to the register page to create a personal account. <a href='https://github.com/danlee9/react-ibet'>Github</a></p>
+        //     );
+        // };
         const fcaDescription = "Created pages for FCA (Fiat Chrysler Automobile) dealership sites such as financial forms, showroom lineups, and vehicle display pages, as well as general features such as inventory-search, coupons, third-party plugin integration, admin site customization, etc. Also designed internal web app to interface with our database and backend to handle data from FCA.";
         const yarkDescription = "Launched various client sites such as yarkbuyscars on digital ocean servers running ubuntu linux and nginx. SSL Certificates added with Let's Encrypt";
         return (
