@@ -8,3 +8,14 @@
     background-color: rgb(30,36,44);
     color: rgb(90,92,94);
 }
+
+/* .feedback {
+    opacity: 0;
+    display: none;
+    transition: opacity 300ms ease-in;
+}
+
+.feedback.show {
+    opacity: 1;
+    display: inline-block;
+} */

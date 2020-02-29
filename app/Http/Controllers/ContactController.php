@@ -20,9 +20,9 @@ class ContactController extends Controller
             $message = request('message');
             $email = request('email');
             $name = request('name');
-            $rawMessage = "message: $message\n email: $email\n name: $name";
+            $rawMessage = "message: $message\nemail: $email\nname: $name\nREMEMBER to send from contact email";
             Mail::raw($rawMessage, function($message) {
-                $message->to('dan.dh.lee@gmail.com')
+                $message->to('contact@danlee.dev')
                     ->from(request('email'), request('name'))
                     ->subject('Message from portfolio');
             });
