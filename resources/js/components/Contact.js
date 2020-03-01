@@ -81,7 +81,7 @@ class Contact extends React.Component {
                         </div>
                         <Transition visible={this.state.showForm} animation="vertical flip" duration={500}>
                             <div className="row">
-                                <div className="eight wide left aligned column">
+                                <div className="twelve wide left aligned column">
                                     <form className="ui form email-form">
                                         <div className="field">
                                             <input type="text" name="name" placeholder="Name" value={name} onChange={this.onInputChange}/>
